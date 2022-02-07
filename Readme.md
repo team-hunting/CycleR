@@ -1,6 +1,6 @@
-# [CycleR](https://hip-flask.herokuapp.com/)
+# [CycleR](https://cyclerank.herokuapp.com/)
 
-This repo automatically deploys to https://hip-flask.herokuapp.com/ <br/> 
+This repo automatically deploys to https://cyclerank.herokuapp.com/ <br/> 
 
 ## GENERAL TODO:
 - Set up Heroku Postgres Free instance
