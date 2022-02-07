@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %} CycleRank {% endblock %}
+
+{% block body %}
+
+<div class="min-vw-100 min-vh-100 d-flex" style="background-color: #eee;">
+  <div class="mx-auto my-auto" style="max-width: 90%; min-width: 90%;" id="comicdiv" >
+    <div>
+
+
+
+      <br/>
+
+        <div class="alert alert-success" role="alert">
+          <h4 class="alert-heading text-center">CycleRank</h4>
+          <p class="text-center">
+            Page under Development
+          </p>
+
+        </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+<script type="text/javascript"> 
+
+let scrapeDataUrl = "{{ url_for('getCycleData') }}";
+
+</script>
+
+{% endblock %}

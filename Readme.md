@@ -1,30 +1,10 @@
-# [HipFlask](https://hip-flask.herokuapp.com/)
+# [CycleR](https://hip-flask.herokuapp.com/)
 
 This repo automatically deploys to https://hip-flask.herokuapp.com/ <br/> 
 
-## PIXEL SORTING TODO:
-- Build UI elements for:
-- Char.length
-- Angle
-- External interval file + upload box
-- Sorting function
-- Mask
-- 
-- Add a loading icon that hovers over the canvas while you wait for sorting
-- Hide 'options' sections initially and reveal them in an accordian, or with a button or something
-- Get a better default image in the static folder
-- Update canvas size in case of default image
-- Add ability to revert to original image(?) Use context.save() and context.restore()
-- Add async method to delete the sorted image from server after it gets served back to client
-
 ## GENERAL TODO:
-- Make a homepage 
-- Make a 404 page
-- Catch all unmatched URLs and route to 404
-- Add some Vanta.js because it's cool 
-- Rework the file saving and sending in  main.py. Specifically, the downloadIssue() function - we should replace the usage of send_file with send_from_directory for greater security. In order to do this we may need to rework the saveImageFromUrl() function to save images into one of the folders that flask has access to, perhaps 'static'. Ideally we could replace this with purely client side code, but blogspot has a CORS policy preventing this currently. For more info see static/utilities/Readme.md
-- Set up a CORS proxy we can use to snag the blogspot images using fetch, then we can zip them client side
-- Build more cool pages!!!
+- Set up Heroku Postgres Free instance
+- New Favicon
 
 
 ## Dev Info:
@@ -44,8 +24,6 @@ If you run the app without development mode on, the WSGI server gives off a warn
 
 On Heroku WEB_CONCURRENCY config variable is set to 3 as per https://devcenter.heroku.com/articles/python-gunicorn <br/>
 
-You will need to set a ```MONGODB_URI``` environment variable to connect to the DB. The value (for this specific deployment) can be found in the heroku settings if you have access. <br/>
-
 ## Notes:
 
 HTML Escaping / Sanitizing inputs: <br/>
@@ -61,5 +39,3 @@ Note: HTTP response 304 is for "Redirection to a previously cached result". <br/
 Flask quickstart: https://flask.palletsprojects.com/en/2.0.x/quickstart/ <br/>
 
 Bootstrap components: https://getbootstrap.com/docs/5.0/customize/components/ <br/> 
-
-Client Side zip & download functionality is contained under static/utilities/zip <br/>
