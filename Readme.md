@@ -39,3 +39,5 @@ Note: HTTP response 304 is for "Redirection to a previously cached result". <br/
 Flask quickstart: https://flask.palletsprojects.com/en/2.0.x/quickstart/ <br/>
 
 Bootstrap components: https://getbootstrap.com/docs/5.0/customize/components/ <br/> 
+
+https://devcenter.heroku.com/articles/connecting-heroku-postgres#connecting-in-python <br/>
